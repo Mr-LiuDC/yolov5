@@ -1,0 +1,13 @@
+train: ./data/5-classes-food-container/2023_train.txt
+val: ./data/5-classes-food-container/2023_val.txt
+
+# Classes
+names: 
+  0: box
+  1: cup
+  2: bowl
+  3: plate
+  4: independent
+
+# star training
+# python train.py --weights yolov5m.pt --data data/5-classes-food-container.yaml --name 5-classes-food-container
