@@ -10,4 +10,7 @@ names:
   4: independent
 
 # star training
-# python train.py --weights yolov5m.pt --data data/5-classes-food-container.yaml --name 5-classes-food-container
+# python train.py --weights ./weights/yolov5m.pt --data data/5-classes-food-container.yaml --name 5-classes-food-container
+
+# export
+# python export.py --weights runs/train/5-classes-food-container2/weights/best.pt --include torchscript onnx tfjs --simplify
