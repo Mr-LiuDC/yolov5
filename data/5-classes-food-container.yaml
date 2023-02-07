@@ -13,4 +13,5 @@ names:
 # python train.py --weights ./weights/yolov5m.pt --data data/5-classes-food-container.yaml --name 5-classes-food-container
 
 # export
-# python export.py --weights runs/train/5-classes-food-container2/weights/best.pt --include torchscript onnx tfjs --simplify
+# python export.py --weights runs/train/5-classes-food-container/weights/best.pt --include torchscript onnx tfjs --simplify
+# python export.py --weights runs/train/5-classes-food-container-yolov5-100epoch/weights/best.pt --include torchscript onnx tfjs --simplify
