@@ -14,4 +14,16 @@ names:
 
 # export
 # python export.py --weights runs/train/5-classes-food-container/weights/best.pt --include torchscript onnx tfjs --simplify
-# python export.py --opset 12 --int8 --weights runs/train/5-classes-food-container-n-20epoch/weights/best.pt --include torchscript onnx tfjs --simplify
+# python export.py --opset 12 --int8 --weights runs/train/5-classes-food-container-n-20epoch/weights/best.pt --include torchscript onnx tflite coreml --simplify
+
+# Detect
+# python detect.py --weights runs/train/5-classes-food-container-n-20epoch/weights/best.onnx --dnn --data data/5-classes-food-container.yaml
+
+# Validate
+# python val.py --weights runs/train/5-classes-food-container-n-20epoch/weights/best.onnx --dnn --data data/5-classes-food-container.yaml
+
+
+# https://github.com/ultralytics/yolov5/issues/8439
+# python export.py --weights yolov5s.pt --include onnx
+# python detect.py --weights yolov5s.onnx --dnn  # detect
+# python val.py --weights yolov5s.onnx --dnn  # validate
