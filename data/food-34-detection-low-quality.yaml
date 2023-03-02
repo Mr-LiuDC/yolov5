@@ -3,7 +3,8 @@ val: yolo_val_list.txt
 test: yolo_test_list.txt
 train: yolo_train_list.txt
 
-# python train.py --epochs 20 --batch-size 8 --weights ./weights/yolov5m.pt --data data/food-34-detection-low-quality.yaml --name food-34-detection-low-quality-s-20-epochs
+# python train.py --epochs 100 --batch-size 8 --weights ./weights/yolov5m.pt --data data/food-34-detection-low-quality.yaml --name food-34-detection-low-quality-m-100-epochs > /tmp/food-34-detection-low-quality-m-100-epochs-training.log 2>&1 &
+# python export.py --opset 12 --int8 --weights runs/train/food-34-detection-low-quality-m-100-epochs/weights/best.pt --include onnx tfjs --simplify
 
 names:
   0: box
