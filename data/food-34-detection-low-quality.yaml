@@ -10,32 +10,32 @@ train: yolo_train_list.txt
 names:
   0: box
   1: cup
-  2: corn
-  3: pear
-  4: bowl
-  5: cake
-  6: mango
-  7: peach
-  8: bread
-  9: plate
-  10: toast
-  11: apple
-  12: walnut
+  2: bowl
+  3: cake
+  4: corn
+  5: pear
+  6: apple
+  7: bread
+  8: mango
+  9: peach
+  10: plate
+  11: toast
+  12: banana
   13: orange
-  14: banana
+  14: pitaya
   15: tomato
-  16: pitaya
+  16: walnut
   17: cucumber
-  18: pineapple
+  18: boxed_egg
   19: drumstick
-  20: ice_cream
-  21: boxed_egg
-  22: hamimelon
-  23: steamedbun
-  24: mangosteen
-  25: watermelon
-  26: boxed_milk
-  27: grapefruit
+  20: hamimelon
+  21: ice_cream
+  22: pineapple
+  23: boxed_milk
+  24: grapefruit
+  25: mangosteen
+  26: steamedbun
+  27: watermelon
   28: pomegranate
   29: bottled_drink
   30: canned_beverage
