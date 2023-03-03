@@ -5,6 +5,7 @@ train: yolo_train_list.txt
 
 # python train.py --epochs 100 --batch-size 8 --weights ./weights/yolov5m.pt --data data/food-34-detection-low-quality.yaml --name food-34-detection-low-quality-m-100-epochs > /tmp/food-34-detection-low-quality-m-100-epochs-training.log 2>&1 &
 # python export.py --opset 12 --int8 --weights runs/train/food-34-detection-low-quality-m-100-epochs/weights/best.pt --include onnx tfjs --simplify
+# python detect.py --weights runs/train/food-34-detection-low-quality-m-100-epochs/weights/best.onnx --dnn --data data/food-34-detection-low-quality.yaml
 
 names:
   0: box
