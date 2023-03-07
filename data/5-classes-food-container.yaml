@@ -1,3 +1,4 @@
+# datasets: food-5-detection-low-quality、5_classes_food_container
 path: ../datasets/food-5-detection-low-quality
 val: yolo_val_list.txt
 test: yolo_test_list.txt
