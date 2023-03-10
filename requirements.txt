@@ -33,13 +33,13 @@ onnx-simplifier>=0.4.1  # ONNX simplifier
 # nvidia-pyindex  # TensorRT export
 # nvidia-tensorrt  # TensorRT export
 # scikit-learn<=1.1.2  # CoreML quantization
-tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
-tensorflowjs>=3.9.0  # TF.js export
+# tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
+# tensorflowjs>=3.9.0  # TF.js export
 # tensorflow_probability==0.15.0
 # openvino-dev  # OpenVINO export
 
 # Deploy ----------------------------------------------------------------------
-setuptools>=65.5.1 # Snyk vulnerability fix
+# setuptools>=65.5.1 # Snyk vulnerability fix
 # tritonclient[all]~=2.24.0
 
 # Extras ----------------------------------------------------------------------
@@ -49,3 +49,20 @@ setuptools>=65.5.1 # Snyk vulnerability fix
 # pycocotools>=2.0.6  # COCO mAP
 # roboflow
 # ultralytics  # HUB https://hub.ultralytics.com
+
+
+# nvidia-smi
+
+# Pip install
+# pip install torch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 -i https://mirror.baidu.com/pypi/simple/
+
+# CUDA 10.2
+# conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
+# CUDA 11.3
+# conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+# CUDA 11.6
+# conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+# CPU Only
+# conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cpuonly -c pytorch
+
+# pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple/
