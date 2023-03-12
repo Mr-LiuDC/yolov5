@@ -3,7 +3,7 @@ val: yolo_val_list.txt
 test: yolo_test_list.txt
 train: yolo_train_list.txt
 
-# python segment/train.py --batch-size 8 --epochs 20 --data ./data/food-323-segment.yaml --weights ./weights/yolov5s-seg.pt
+# python segment/train.py --batch-size 8 --epochs 20 --data ./data/food-323-segment.yaml --weights ./weights/yolov5s-seg.pt > /tmp/food-323-segment-s-20-epochs-training.log 2>&1 &
 
 # set KMP_DUPLICATE_LIB_OK=TRUE
 # set PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:4096
