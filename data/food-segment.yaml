@@ -1,0 +1,17 @@
+path: ../datasets/food-segment
+val: yolo_val_list.txt
+test: yolo_test_list.txt
+train: yolo_train_list.txt
+
+# python segment/train.py --batch-size 8 --epochs 20 --data ./data/food-segment.yaml --weights ./weights/yolov5s-seg.pt > /tmp/food-segment-s-20-epochs-training.log 2>&1 &
+
+# set KMP_DUPLICATE_LIB_OK=TRUE
+# set PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:4096
+
+# export KMP_DUPLICATE_LIB_OK=TRUE
+# export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:4096
+
+download: https://nutrition-bucket.rplushealth.cn/datasets/food_segment/food-segment.zip
+
+names:
+  0: food
