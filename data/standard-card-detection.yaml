@@ -77,11 +77,11 @@ download: |
       lb_path = lbs_path / (ann_file.replace('.xml', '.txt'))
       convert_xml_to_yolo(base_dir, lb_path, ann_file)
   
-      shutil.copytree(base_dir / 'JPEGImages', base_dir / 'images')
-      shuffle(ann_files)
-      val_files = ann_files[:round(len(ann_files) * val_rate)]
-      test_files = ann_files[:round(len(ann_files) * test_rate)]
-      train_files = ann_files[round(len(ann_files) * val_rate):]
-      open(f'{base_dir}/yolo_val_list.txt', 'w').write("./images/" + "./images/".join([file.replace('.xml', '.jpg') + '\n' for file in val_files]))
-      open(f'{base_dir}/yolo_test_list.txt', 'w').write("./images/" + "./images/".join([file.replace('.xml', '.jpg') + '\n' for file in test_files]))
-      open(f'{base_dir}/yolo_train_list.txt', 'w').write("./images/" + "./images/".join([file.replace('.xml', '.jpg') + '\n' for file in train_files]))
+  shutil.copytree(base_dir / 'JPEGImages', base_dir / 'images')
+  shuffle(ann_files)
+  val_files = ann_files[:round(len(ann_files) * val_rate)]
+  test_files = ann_files[:round(len(ann_files) * test_rate)]
+  train_files = ann_files[round(len(ann_files) * val_rate):]
+  open(f'{base_dir}/yolo_val_list.txt', 'w').write("./images/" + "./images/".join([file.replace('.xml', '.jpg') + '\n' for file in val_files]))
+  open(f'{base_dir}/yolo_test_list.txt', 'w').write("./images/" + "./images/".join([file.replace('.xml', '.jpg') + '\n' for file in test_files]))
+  open(f'{base_dir}/yolo_train_list.txt', 'w').write("./images/" + "./images/".join([file.replace('.xml', '.jpg') + '\n' for file in train_files]))

@@ -39,7 +39,6 @@ download: |
 
   from utils.general import download, Path
 
-
   def convert_label(path, lb_path, ann_name):
       def convert_box(size, box):
           dw, dh = 1. / size[0], 1. / size[1]
