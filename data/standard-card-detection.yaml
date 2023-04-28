@@ -1,5 +1,5 @@
 # star training
-# python train.py --epochs 100 --batch-size 8 --weights ./weights/yolov5m.pt --data data/standard-card-detection.yaml --name standard-card-detection
+# python train.py --epochs 100 --batch-size 8 --workers 4 --weights ./weights/yolov5m.pt --data data/standard-card-detection.yaml --name standard-card-detection
 
 # export
 # python export.py --weights runs/train/standard-card-detection/weights/best.pt --include onnx --simplify
